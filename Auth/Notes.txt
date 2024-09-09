@@ -1,0 +1,17 @@
+01 Hashing =>   Password store in some gibberish language just because of privacy
+            ex Anshuman => #4hsd241
+
+string can be converted to hash but can't convert it back
+
+encription 2way 
+
+02 Json web tokens 
+
+it takes json input {password:"Anshuman"};
+it neithrt if encription or hashing (its technically a digital signature)
+Anyone can see the orignal output given the signatureSignature can be verified only using the password
+
+03 Local Storage
+
+
+It use to store the token benifits of this u have not to give your id and password all time
