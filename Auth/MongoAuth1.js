@@ -11,6 +11,7 @@ app.post("/signup", async function(req,res){
     const password= req.body.password;
     const name = req.body.password;
     const existingUser = await User.findOne({email:username});
+    // similary like findOne we have update and Delete function by passsing the value we can delete or update whatever we want
     if(existingUser){
         return res.status(400).send("USer already Exists");
     }
