@@ -17,7 +17,7 @@ app.post("/signup", async function(req,res){
 
 const user = new User({
     name:'Anshuman Shukla',
-    email:"anshumanshukla9918@gmail.com",
+    email:"anshumanshukla@gmail.com",
     password:"1234567"
 })
 user.save();
