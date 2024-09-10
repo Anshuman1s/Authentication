@@ -1,0 +1,28 @@
+const express = require('express');
+const app = express();
+app.use(express.json());
+const mongoose = require('mongoose');
+mongoose.connect("mongodb+srv://anshumanshukla9918:N3JbxtA9v8aK0TlL@cluster0.hqksj.mongodb.net/user_app")
+
+const User = mongoose.model('Users',{name:String,email:String,password:String});
+
+app.post("/signup", async function(req,res){
+    const username = req.body.name;
+    const password= req.body.password;
+    const name = req.body.password;
+    const existingUser = await User.findOne({email:username});
+    if(existingUser){
+        return res.status(400).send("USer already Exists");
+    }
+
+const user = new User({
+    name:'Anshuman Shukla',
+    email:"anshumanshukla9918@gmail.com",
+    password:"1234567"
+})
+user.save();
+res.json({
+    "msg":"User Created Successfully"
+})
+})
+app.listen(3000);
