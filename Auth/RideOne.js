@@ -1,17 +1,14 @@
 const express = require('express');
 const app = express();
-
 // function return boolean if the age is more than 14 if then return true else false;
 // This Function is like Middleware who checks eligibility of Rider 
 // function isOldEnough(age){
 //     if(age>=14){
-//         return true;
-    
+//         return true;   
 //     }else{
 //         return false;
 //     }
 // }
-
 // app.use(isOldEnoughMiddleware)
 // This will use isOldEnoughMiddleware whenever reach to any route
 function isOldEnoughMiddleware(req,res,next){
