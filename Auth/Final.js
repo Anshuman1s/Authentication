@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-function checkUserId(){
+function checkUserId(username){
     if(!username){
         
     }
