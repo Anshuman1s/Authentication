@@ -23,7 +23,7 @@ const ALL_USERS=[{
 function userExists(username,password){
     let userExists = false;
     for(let i=0;i<ALL_USERS.length;i++){
-        if(ALL_USERS[i].username == username && ALL_USERS[i].password ==password){
+        if(ALL_USERS[i].username == username && ALL_USERS[i].password == password){
             userExists = true;
         }
     }
