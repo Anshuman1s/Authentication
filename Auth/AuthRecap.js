@@ -18,7 +18,7 @@ console.log(token)
 // const newToken = jwt.sign(content,"secret")
 // console.log(newToken);
 
-// while Verify
+// Verify the token is valid or not and after
 
 const VerifyToken = jwt.verify("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW5zaHVtYW4iLCJhY2NvdW50TnVtYmVyIjo5ODc2NTQzMjEsImlhdCI6MTcyNjU5MTY3OH0.1veFRhFRFeQabCasFrx6qlHrikgW-0glYECoZXoXrBE","secret");
 console.log(VerifyToken);
