@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 // Connting to MongoDB
 mongoose.connect('mongodb+srv://anshumanshukla9918:N3JbxtA9v8aK0TlL@cluster0.hqksj.mongodb.net/course_selling_app')
 
-// Define Schema
+// Define Schema how it will accept the format of username;
 const AdminSchema = new mongoose.Schema({
     // schema definition here
     username:String,
