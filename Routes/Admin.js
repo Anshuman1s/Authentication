@@ -30,13 +30,11 @@ router.post('/signin', (req, res) => {
 router.post('/courses', adminMiddleware, (req, res) => {
     // Implement course creation logic
 });
-
 router.get('/courses', adminMiddleware, (req, res) => {
     // Implement fetching all courses logic
     if(!course){
         res.status(401).send({
         "Messgae":"You have not Buy any course";
-        
         })
     }
 });
