@@ -2,7 +2,6 @@ const { Router } = require("express");
 const adminMiddleware = require("../Middleware/admin");
 const { Admin } = require("../MongoDb");
 const router = Router();
-
 // Admin Routes
 router.post('/signup',async (req, res) => {
     // Implement admin signup logic
