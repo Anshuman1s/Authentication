@@ -21,7 +21,6 @@ router.post('/signup',async (req, res) => {
     //     })
     // })
 });
-
 router.post('/signin', (req, res) => {
     // Implement admin signup logic
 });
