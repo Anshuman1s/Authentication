@@ -11,15 +11,15 @@ router.post('/signup',async (req, res) => {
         username:username,
         password:password
     })
-    // .then(function(){
-    //     res.send({
-    //         message:"Admin Created Successfully"
-    //     })
-    // }).catch(function(){
-    //     res.json({
-    //         messgage:"User not Created"
-    //     })
-    // })
+    .then(function(){
+        res.send({
+            message:"Admin Created Successfully"
+        })
+    }).catch(function(){
+        res.json({
+            messgage:"User not Created"
+        })
+    })
 });
 router.post('/signin', (req, res) => {
     // Implement admin signup logic
