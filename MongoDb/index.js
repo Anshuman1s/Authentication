@@ -19,7 +19,6 @@ const UserSchema = new mongoose.Schema({
         ref:'Course'
     }]
 })
-
 const CourseSchema = new mongoose.Schema({
     title:String,
     description:String,
